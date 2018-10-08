@@ -1,0 +1,133 @@
+/*Normalize*/
+html{
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+img {
+    border-style: none;
+}
+
+small {
+    font-size: 80%;
+}
+
+/*Utility*/
+.v-align-mid {
+    vertical-align: middle;
+}
+
+/*App*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.title {
+    padding: 0 10px;
+    align-self: center;
+}
+
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-gap: 10px;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.wrapper > * {
+    grid-column: col-start / span 12;
+}
+
+.wrapper .app-header {
+    background: #fffe00;
+    display: flex;
+    justify-content: left;
+    box-shadow: 0px 2px 2px 0px #A3A3A3;
+    padding: 10px;
+}
+
+.logo {
+    align-self: center;
+}
+
+.h-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    border-right: 2px solid #ccc;
+}
+
+.card-media {
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+}
+
+.profile-pic {
+    background-image: url("assets/img/dummy-profile-pic-300x300.jpg");
+    width: 100%;
+    height: 300px;
+}
+
+.pillar-pic{
+    background-image: url("assets/img/Pillar_pic.png");
+    width: 100%;
+    height: 300px;
+}
+
+.card-subtitle {
+    text-align: center;
+}
+
+.card-shadow {
+    box-shadow: 3px 2px 10px 0px #CCCCCC;
+}
+
+/*Footer*/
+.app-footer{
+    box-shadow: 0 -1px 2px 0px #bbb;
+    background:#eee;
+}
+
+
+.app-footer ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin: 0;
+    flex-direction: column;
+}
+
+.app-footer ul li{
+    list-style: none;
+}
+
+.app-footer ul li a:hover{
+    text-decoration: none;
+}
+
+@media (min-width: 700px) {
+    .h-container {
+        flex-direction: row;
+    }
+    .app-footer ul{
+        flex-direction: row;
+    }
+}
+
